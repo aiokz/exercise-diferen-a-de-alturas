@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+	
+	int anos = 0;
+	float anah = 1.50, feh = 1.10, cran = 0.02, crfe = 0.03;
+	
+	while(feh <= anah){
+	    feh += crfe;
+	    anah += cran;
+	    anos += 1;
+	}
+	printf("Serao necessarios %d anos para que Felisberto fique maior que Anacleto", anos);
+	return 0;
+}
